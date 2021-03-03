@@ -1,0 +1,543 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="A" xml:space="preserve">
+    <value>A</value>
+  </data>
+  <data name="Action" xml:space="preserve">
+    <value>Akcje</value>
+  </data>
+  <data name="ActionSummary" xml:space="preserve">
+    <value>Zestawienie akcji</value>
+  </data>
+  <data name="ActualXP" xml:space="preserve">
+    <value>Obecne</value>
+  </data>
+  <data name="Add" xml:space="preserve">
+    <value>Dodaj</value>
+  </data>
+  <data name="Advance" xml:space="preserve">
+    <value>Schemat rozwoju</value>
+  </data>
+  <data name="AdvancedArmour" xml:space="preserve">
+    <value>Opancerzenie złożone</value>
+  </data>
+  <data name="AG" xml:space="preserve">
+    <value>Zr</value>
+  </data>
+  <data name="Age" xml:space="preserve">
+    <value>Wiek</value>
+  </data>
+  <data name="Aim" xml:space="preserve">
+    <value>Atak wielokrotny</value>
+  </data>
+  <data name="AP" xml:space="preserve">
+    <value>PZ</value>
+  </data>
+  <data name="Armour" xml:space="preserve">
+    <value>Pancerz</value>
+  </data>
+  <data name="ArmourPoints" xml:space="preserve">
+    <value>Punkty zbroi</value>
+  </data>
+  <data name="ArmourType" xml:space="preserve">
+    <value>Typ pancerza</value>
+  </data>
+  <data name="Author" xml:space="preserve">
+    <value>Autor</value>
+  </data>
+  <data name="BasicAction" xml:space="preserve">
+    <value>Akcje podstawowe</value>
+  </data>
+  <data name="BasicArmour" xml:space="preserve">
+    <value>Opancerzenie proste</value>
+  </data>
+  <data name="BirthPlace" xml:space="preserve">
+    <value>Miejsce urodzenia</value>
+  </data>
+  <data name="Body" xml:space="preserve">
+    <value>Korpus</value>
+  </data>
+  <data name="BookOfRules" xml:space="preserve">
+    <value>Księga zasad</value>
+  </data>
+  <data name="Books" xml:space="preserve">
+    <value>Książki</value>
+  </data>
+  <data name="BS" xml:space="preserve">
+    <value>US</value>
+  </data>
+  <data name="Campaign" xml:space="preserve">
+    <value>Kampania</value>
+  </data>
+  <data name="CampaignName" xml:space="preserve">
+    <value>Nazwa kampanii</value>
+  </data>
+  <data name="CampaignYear" xml:space="preserve">
+    <value>Rok kampanii</value>
+  </data>
+  <data name="Cancel" xml:space="preserve">
+    <value>Anuluj</value>
+  </data>
+  <data name="Cast" xml:space="preserve">
+    <value>Rzucanie zaklecia</value>
+  </data>
+  <data name="Category" xml:space="preserve">
+    <value>Kategoria</value>
+  </data>
+  <data name="Character" xml:space="preserve">
+    <value>Bohater</value>
+  </data>
+  <data name="CharacterProfile" xml:space="preserve">
+    <value>Cechy</value>
+  </data>
+  <data name="Characters" xml:space="preserve">
+    <value>Bohaterowie</value>
+  </data>
+  <data name="CharactersName" xml:space="preserve">
+    <value>Imię bohatera</value>
+  </data>
+  <data name="CharactersRace" xml:space="preserve">
+    <value>Rasa bohatera</value>
+  </data>
+  <data name="Charge" xml:space="preserve">
+    <value>Szarża</value>
+  </data>
+  <data name="ChargeAttack" xml:space="preserve">
+    <value>Szarża</value>
+  </data>
+  <data name="CombatMovement" xml:space="preserve">
+    <value>Ruch w walce</value>
+  </data>
+  <data name="Create" xml:space="preserve">
+    <value>Stwórz</value>
+  </data>
+  <data name="CreateCharacter" xml:space="preserve">
+    <value>Nowy bohater</value>
+  </data>
+  <data name="CreatingNewCharacter" xml:space="preserve">
+    <value>Tworzenie nowego bohatera</value>
+  </data>
+  <data name="Current" xml:space="preserve">
+    <value>Aktualna</value>
+  </data>
+  <data name="CurrentCareer" xml:space="preserve">
+    <value>Obecna profesja</value>
+  </data>
+  <data name="Damage" xml:space="preserve">
+    <value>Siła broni</value>
+  </data>
+  <data name="Default" xml:space="preserve">
+    <value>Default</value>
+  </data>
+  <data name="DefensiveStance" xml:space="preserve">
+    <value>Pozycja obronna</value>
+  </data>
+  <data name="Delay" xml:space="preserve">
+    <value>Opóźnienie</value>
+  </data>
+  <data name="Delete" xml:space="preserve">
+    <value>Usuń</value>
+  </data>
+  <data name="DeleteCharacter" xml:space="preserve">
+    <value>Usuń bohatera</value>
+  </data>
+  <data name="DescriptionRaceElf" xml:space="preserve">
+    <value>Elfy są rasą smukłych, pełnych gracji istot, z łatwością rozpoznawalnych dzięki ostrym rysom twarzy i spiczasto zakończonym uszom. Znane są z talentu do łucznictwa, zamiłowania do wiedzy i zdolności magicznych. To istoty blisko związane z naturą. Instynktownie wyczuwają wszelkie zmiany w przyrodzie, szczególnie w ostępach leśnych, ale także na morzu. Nienawidzą wszystkich, którzy zakłócają harmonię natury, niezależnie od rasy. Z równą gwałtownością przeciwstawiają się działaniom złych ludzi i chciwych krasnoludów, co plugawych orków. Mimo iż często są postrzegane jako zarozumiale i dumne, elfy poświęciły więcej dla dobra tego świata niż wszystkie pozostałe rasy razem wzięte.</value>
+  </data>
+  <data name="DescriptionRaceHuman" xml:space="preserve">
+    <value>Ludzie są najliczniejsza rasa w Starym  Świecie i założycielami największego państwa, czyli Imperium. Chociaż nie są tak mądrzy jak elfy, ani równie wytrzymali jak krasnoludy, ludzie to rasa, która swoja ambicja i determinacja przewyższa wszystkie pozostałe. Są wyjątkowo elastyczni, co jest zarówna ich wielką zaletą jak i poważna słabością.  Mimo iż wielu ludzi wsławiło się heroicznymi czynami w walce z silami ciemności, to jednak smutna prawda pozostaje fakt, że ludzie najłatwiej ze wszystkich ras poddaj się wpływom Mrocznych Bóstw Chaosu.</value>
+  </data>
+  <data name="DescriptionRaceSelection" xml:space="preserve">
+    <value>Przedstawiciela jakiej rasy chciałbyś odgrywać ? W świecie Warhammera możesz wybierać spośród czterech głównych ras: elfów, krasnoludów, ludzi i niziołków. Każda z nich ma swoje dobre i złe strony. Po przeczytaniu zamieszczonych poniżej opisów czterech ras, powinieneś wybrać tę, która najbardziej Ci odpowiada.</value>
+  </data>
+  <data name="Dice" xml:space="preserve">
+    <value>Kostka</value>
+  </data>
+  <data name="Disengage" xml:space="preserve">
+    <value>odwrót</value>
+  </data>
+  <data name="DistinguishingMarks" xml:space="preserve">
+    <value>Znaki szczególne</value>
+  </data>
+  <data name="Dwarf" xml:space="preserve">
+    <value>Krasnolud</value>
+  </data>
+  <data name="Elf" xml:space="preserve">
+    <value>Elf</value>
+  </data>
+  <data name="Enc" xml:space="preserve">
+    <value>Obc.</value>
+  </data>
+  <data name="Equipment" xml:space="preserve">
+    <value>Wyposażenie</value>
+  </data>
+  <data name="Exit" xml:space="preserve">
+    <value>Wyjście</value>
+  </data>
+  <data name="ExperiencePoints" xml:space="preserve">
+    <value>Punkty doświadczenia</value>
+  </data>
+  <data name="Export" xml:space="preserve">
+    <value>Eksport bohatera</value>
+  </data>
+  <data name="EyeColor" xml:space="preserve">
+    <value>Kolor oczu</value>
+  </data>
+  <data name="FEL" xml:space="preserve">
+    <value>Ogd</value>
+  </data>
+  <data name="FP" xml:space="preserve">
+    <value>PP</value>
+  </data>
+  <data name="Game" xml:space="preserve">
+    <value>Gra</value>
+  </data>
+  <data name="GameMaster" xml:space="preserve">
+    <value>Mistrz Gry</value>
+  </data>
+  <data name="GameMastersName" xml:space="preserve">
+    <value>Imię GameMaster'a</value>
+  </data>
+  <data name="GameName" xml:space="preserve">
+    <value>WarhammerRPG 2.0 by Linaq</value>
+  </data>
+  <data name="GameRules" xml:space="preserve">
+    <value>Zasady gry</value>
+  </data>
+  <data name="Gender" xml:space="preserve">
+    <value>Płeć</value>
+  </data>
+  <data name="General" xml:space="preserve">
+    <value>Ogólne</value>
+  </data>
+  <data name="Group" xml:space="preserve">
+    <value>Kategoria</value>
+  </data>
+  <data name="GuardedAttack" xml:space="preserve">
+    <value>Ostrożny atak</value>
+  </data>
+  <data name="Guide" xml:space="preserve">
+    <value>Poradnik</value>
+  </data>
+  <data name="HairColor" xml:space="preserve">
+    <value>Kolor włosów</value>
+  </data>
+  <data name="Halfling" xml:space="preserve">
+    <value>Niziołek</value>
+  </data>
+  <data name="Head" xml:space="preserve">
+    <value>Głowa</value>
+  </data>
+  <data name="Height" xml:space="preserve">
+    <value>Wrost</value>
+  </data>
+  <data name="Help" xml:space="preserve">
+    <value>Pomoc</value>
+  </data>
+  <data name="HistoryElf" xml:space="preserve">
+    <value>Historia elfów jest jednocześnie chwalebna i tragiczna. Pod koniec wojny z krasnoludami, zwanej przez elfy Wojną o Brodę, Wysokie Elfy odpłynęły do Ulthuanu, ich zamorskiej ojczyzny, by tam walczyć z najazdem Mrocznych Elfów. Byli jednak wśród nich tacy, którzy postanowili pozostać w Starym Świecie. Niektórzy wymówili posłuszeństwo Królowi Feniksowi i zajęli się budowaniem własnej przyszłości w leśnych królestwach. Inni, jak dawniej, podróżowali po morzach, nawiązując handel z powoli rodzącymi się królestwami ludzi.
+W wielu lasach i puszczach Imperium istnieją niewielkie enklawy elfów. Największa z nich znajduje się w Lesie Laurelorn, na północny zachód od wielkiego miasta Middenheim. Mimo iż te ziemie nominalnie należą do Imperium, elfy nie uznają Imperatora za swojego władcę i nie uważają siebie za obywateli Imperium. Ludzie mają wystarczająco dużo problemów z innymi mieszkańcami lasów, na przykład z okrutnymi zwierzoludźmi, by przejmować się elfami. Zresztą i tak na niewiele zdałyby się ich ewentualne wysilki by znaleźć elfie wioski. Elfy cenią sobie spokój i używają magii iluzyjnej w celu ukrycia swych leśnych kryjówek. Jednak nie zapomniały o reszcie świata. Choć rzadko opuszczają swoje wioski, świetnie orientują się w tym, co dzieje się w okolicznych krainach. 
+Elfy można najczęściej spotkać w wielkich miastach, takich jak Altdorf, Nuln i Marienburg, gdzie kierują wpływowymi domami kupieckimi reprezentującymi interesy odległego Ulthuanu. Młodzi potomkowie kupieckich rodów dużo podróżują, zyskując doświadczenie i kontakty handlowe, które przydają się w późniejszej karierze zawodowej. Mimo że często patrzą z niechęcią na, ich zdaniem nieokrzesanych leśnych kuzynów, elfy wysokiego rodu doskonale pamiętają, iż są daleko od lśniących wież Ulthuanu i w związku z tym cieszą się mniejszym szacunkiem niż ich kuzyni. Wysokie Elfy.</value>
+  </data>
+  <data name="HistoryHuman" xml:space="preserve">
+    <value>W porównaniu do elfów i krasnoludów ludzie są rasą dość młodą, jednakże bardzo płodną. Szybko rozprzestrzenili się po całym świecie, korzystając z powolnego wymierania starszych ras. Kilka tysięcy lat temu do Starego Świata przybyła z południa grupa ludzkich plemion, które stały się założycielami Imperium, a także pozostałych krain; Bretonii, Estalii, Kisleva i Tilei. Inne plemiona podążyły na północ, aż do mroźnej Norski lub nawet jeszcze dalej. 
+Obywatele Imperium są dumni ze swoich osiągnieć. Ich głównym bóstwem jest Sigmar, założyciel Imperium. Ludzie wierzą, że Sigmar chroni ich przed hordami Chaosu  i wszelkim złem. Imperium polega na potędze swoich armii, niszczącej sile maszyn oblężniczych i dział oraz mocy ośmiu Kolegiów Magii. Wszyscy obywatele Imperium – szlachta, mieszczanie i chłopstwo – znają swoje obowiązki i wiernie służą Imperatorowi. Imperium jest największym i najpotężniejszym państwem Starego Świata.  Jego siłą jest siła ludzkości, Jego mocą – odwaga każdego z obywateli.</value>
+  </data>
+  <data name="Human" xml:space="preserve">
+    <value>Człowiek</value>
+  </data>
+  <data name="INT" xml:space="preserve">
+    <value>Int</value>
+  </data>
+  <data name="IP" xml:space="preserve">
+    <value>PO</value>
+  </data>
+  <data name="JumpLeap" xml:space="preserve">
+    <value>Skok</value>
+  </data>
+  <data name="LanguageT" xml:space="preserve">
+    <value>Język</value>
+  </data>
+  <data name="LeftArm" xml:space="preserve">
+    <value>Lewa ręka</value>
+  </data>
+  <data name="LeftLeg" xml:space="preserve">
+    <value>Lewa noga</value>
+  </data>
+  <data name="LocationsCovered" xml:space="preserve">
+    <value>Lokacja ciala</value>
+  </data>
+  <data name="M" xml:space="preserve">
+    <value>Sz</value>
+  </data>
+  <data name="MAG" xml:space="preserve">
+    <value>Mag</value>
+  </data>
+  <data name="MainAttributes" xml:space="preserve">
+    <value>Cechy główne</value>
+  </data>
+  <data name="MainCharacterProfile" xml:space="preserve">
+    <value>Głowne</value>
+  </data>
+  <data name="Move" xml:space="preserve">
+    <value>Ruch</value>
+  </data>
+  <data name="MoveDisengage" xml:space="preserve">
+    <value>Ruch/odwrót</value>
+  </data>
+  <data name="MyCharacter" xml:space="preserve">
+    <value>Moja postac</value>
+  </data>
+  <data name="Name" xml:space="preserve">
+    <value>Imię</value>
+  </data>
+  <data name="name_Nazwa" xml:space="preserve">
+    <value>Nazwa</value>
+  </data>
+  <data name="Next" xml:space="preserve">
+    <value>Dalej</value>
+  </data>
+  <data name="NumberOfSiblings" xml:space="preserve">
+    <value>Rodzeństwo</value>
+  </data>
+  <data name="ParryingStance" xml:space="preserve">
+    <value>Pozycja obronna</value>
+  </data>
+  <data name="PersonalDetails" xml:space="preserve">
+    <value>Opis bohatera</value>
+  </data>
+  <data name="Player" xml:space="preserve">
+    <value>Gracz</value>
+  </data>
+  <data name="PlayerName" xml:space="preserve">
+    <value>Imię gracza</value>
+  </data>
+  <data name="Previous" xml:space="preserve">
+    <value>Cofnij</value>
+  </data>
+  <data name="PreviousCareers" xml:space="preserve">
+    <value>Poprzednia profesja</value>
+  </data>
+  <data name="Qualities" xml:space="preserve">
+    <value>Cechy oręża</value>
+  </data>
+  <data name="Race" xml:space="preserve">
+    <value>Rasa</value>
+  </data>
+  <data name="Range" xml:space="preserve">
+    <value>Zasięg</value>
+  </data>
+  <data name="Reload" xml:space="preserve">
+    <value>Przelad.</value>
+  </data>
+  <data name="RightArm" xml:space="preserve">
+    <value>Prawa ręka</value>
+  </data>
+  <data name="RightLeg" xml:space="preserve">
+    <value>Prawa noga</value>
+  </data>
+  <data name="Run" xml:space="preserve">
+    <value>Bieg</value>
+  </data>
+  <data name="S" xml:space="preserve">
+    <value>K</value>
+  </data>
+  <data name="SaveAndClose" xml:space="preserve">
+    <value>Zapisz i wyjdź</value>
+  </data>
+  <data name="SB" xml:space="preserve">
+    <value>S</value>
+  </data>
+  <data name="SecondaryCharacterProfile" xml:space="preserve">
+    <value>Drugorzędne</value>
+  </data>
+  <data name="Select" xml:space="preserve">
+    <value>Wybierz</value>
+  </data>
+  <data name="SelectRace" xml:space="preserve">
+    <value>Wybierz rasę</value>
+  </data>
+  <data name="Settings" xml:space="preserve">
+    <value>Ustawienia</value>
+  </data>
+  <data name="Skill" xml:space="preserve">
+    <value>Umiejętność</value>
+  </data>
+  <data name="Skills" xml:space="preserve">
+    <value>Umiejętności</value>
+  </data>
+  <data name="SkillsTalents" xml:space="preserve">
+    <value>Umiejętności / Zdolności</value>
+  </data>
+  <data name="SpellGrimoire" xml:space="preserve">
+    <value>Księga Zaklęć</value>
+  </data>
+  <data name="StandardAttack" xml:space="preserve">
+    <value>Zwykły atak</value>
+  </data>
+  <data name="StandMount" xml:space="preserve">
+    <value>Wstawanie/Dosiadanie wierzchowca</value>
+  </data>
+  <data name="StarSign" xml:space="preserve">
+    <value>Znak gwiezdny</value>
+  </data>
+  <data name="Starting" xml:space="preserve">
+    <value>Początkowa</value>
+  </data>
+  <data name="T" xml:space="preserve">
+    <value>Odp</value>
+  </data>
+  <data name="Talent" xml:space="preserve">
+    <value>Zdolność</value>
+  </data>
+  <data name="Talents" xml:space="preserve">
+    <value>Zdolności</value>
+  </data>
+  <data name="TB" xml:space="preserve">
+    <value>Wt</value>
+  </data>
+  <data name="TotalXP" xml:space="preserve">
+    <value>Razem</value>
+  </data>
+  <data name="Type" xml:space="preserve">
+    <value>Typ</value>
+  </data>
+  <data name="UseASkill" xml:space="preserve">
+    <value>Wykorzystanie umiejetnosci</value>
+  </data>
+  <data name="Version" xml:space="preserve">
+    <value>Wersja</value>
+  </data>
+  <data name="W" xml:space="preserve">
+    <value>Żyw</value>
+  </data>
+  <data name="Weapons" xml:space="preserve">
+    <value>Broń</value>
+  </data>
+  <data name="Weight" xml:space="preserve">
+    <value>Waga</value>
+  </data>
+  <data name="WP" xml:space="preserve">
+    <value>SW</value>
+  </data>
+  <data name="WS" xml:space="preserve">
+    <value>WW</value>
+  </data>
+</root>

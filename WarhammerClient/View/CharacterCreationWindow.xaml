@@ -1,0 +1,36 @@
+﻿<Window x:Class="WarhammerClient.View.CharacterCreationWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WarhammerClient"
+        mc:Ignorable="d"
+        Title="CharacterCreationWindow" Height="450" Width="800"  xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
+        TextElement.Foreground="{DynamicResource MaterialDesignBody}"
+        TextElement.FontWeight="Regular"
+        TextElement.FontSize="13"
+        TextOptions.TextFormattingMode="Ideal"
+        TextOptions.TextRenderingMode="Auto" 
+        FontFamily="{DynamicResource MaterialDesignFont}">
+    <Grid>
+        <Grid.Background>
+            <ImageBrush Stretch="UniformToFill" ImageSource="/Images/pergamin.jpg" AlignmentX="Left"  AlignmentY="Bottom" />
+        </Grid.Background>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="Auto"/>
+        </Grid.RowDefinitions>
+
+        <ScrollViewer>
+            <Frame  Content="{Binding CurrentPage}" Margin="5" NavigationUIVisibility="Hidden">
+
+            </Frame>
+        </ScrollViewer>
+
+        <StackPanel Grid.Row="1" Orientation="Horizontal" HorizontalAlignment="Right" >
+            <Button Command="{Binding CancelCmd}" Content="{local:T Key=Cancel}"  Style="{StaticResource MaterialDesignOutlinedButton}" Margin="5" MinWidth="75"  CommandParameter="{Binding RelativeSource={RelativeSource AncestorType={x:Type Window}, Mode=FindAncestor}}"/>
+            <!--<Button Command="{Binding PreviousPageCmd}" Content="{local:T Key=Previous}"  Style="{StaticResource MaterialDesignOutlinedButton}" Margin="5" MinWidth="75"  CommandParameter="{Binding RelativeSource={RelativeSource AncestorType={x:Type Window}, Mode=FindAncestor}}"/>-->
+            <Button Command="{Binding NextPageCmd}" Content="{local:T Key=Next}"  Style="{StaticResource MaterialDesignOutlinedButton}" Margin="5" MinWidth="75"  CommandParameter="{Binding RelativeSource={RelativeSource AncestorType={x:Type Window}, Mode=FindAncestor}}"/>
+        </StackPanel>
+    </Grid>
+</Window>

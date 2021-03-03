@@ -1,0 +1,109 @@
+﻿<Window x:Class="WarhammerClient.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WarhammerClient"
+        mc:Ignorable="d"
+        Title="MainWindow" MinHeight="700" MinWidth="1200" ResizeMode="NoResize" WindowStartupLocation="CenterScreen"
+         xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
+        TextElement.Foreground="{DynamicResource MaterialDesignBody}"
+        TextElement.FontWeight="Regular"
+        TextElement.FontSize="13"
+        TextOptions.TextFormattingMode="Ideal"
+        TextOptions.TextRenderingMode="Auto" 
+        FontFamily="{DynamicResource MaterialDesignFont}">
+    <Window.Resources>
+        <Style TargetType="Button">
+            <Setter Property="Margin" Value="5"/>
+            <Setter Property="MinWidth" Value="110" />
+        </Style>
+        <Style TargetType="MenuItem">
+            <Setter Property="Height" Value="25"/>
+            <Setter Property="Width" Value="280"/>
+            <Setter Property="HorizontalAlignment" Value="Center"/>
+            <Setter Property="VerticalAlignment" Value="Center"/>
+        </Style>
+        <Style TargetType="TextBox">
+            <Setter Property="Foreground" Value="Black"/>
+        </Style>
+        <Style TargetType="ComboBox">
+            <Setter Property="Foreground" Value="Black"/>
+        </Style>
+    </Window.Resources>
+    <Grid >
+        <Grid.Resources>
+            <ImageBrush x:Key="AddButtonImageBrush" ImageSource="/Images/leftMenuButtonImg.png" Stretch="Fill"/>
+            <ImageBrush x:Key="AddButtonImageBrushMouseOver" ImageSource="/Images/leftMenuButtonImgMouseOver.png" Stretch="Fill"/>
+            <ImageBrush x:Key="AddButtonImageBrushPressed"   ImageSource="/Images/leftMenuButtonImgPressed.png" Stretch="Fill"/>
+            <Style x:Key="AddButtonImageStyle" TargetType="{x:Type Button}">
+                <Setter Property="Background" Value="{StaticResource AddButtonImageBrush}"/>
+                <Setter Property="Template">
+                    <Setter.Value>
+                        <ControlTemplate TargetType="{x:Type Button}">
+                            <Border Background="{TemplateBinding Background}">
+                                <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                            </Border>
+                        </ControlTemplate>
+                    </Setter.Value>
+                </Setter>
+                <Style.Triggers>
+                    <Trigger Property="IsMouseOver" Value="True">
+                        <Setter Property="Background"  Value="{StaticResource AddButtonImageBrushMouseOver}"/>
+                    </Trigger>
+                    <Trigger Property="IsPressed" Value="True">
+                        <Setter Property="Background"  Value="{StaticResource AddButtonImageBrushPressed}"/>
+                    </Trigger>
+                </Style.Triggers>
+            </Style>
+        </Grid.Resources>
+        <Grid.Background>
+            <ImageBrush Stretch="UniformToFill" ImageSource="/Images/pergamin.jpg" AlignmentX="Left"  AlignmentY="Bottom" />
+        </Grid.Background>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="Auto"/>
+            <ColumnDefinition Width="*"/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="auto"/>
+        </Grid.RowDefinitions>
+
+        <StackPanel Orientation="Vertical" Grid.Row="1">
+            <TextBlock Grid.Row="0" Margin="0 5 0 0" Text="{local:T Key=Character}" Style="{StaticResource DescTitleStyle}"/>
+
+            <Button Width="220"   Height="38" Margin="2" Foreground="White" Command="{Binding OpenCaracterCreationCmd}"  Style="{StaticResource AddButtonImageStyle}" >
+                <TextBlock Text="{local:T Key=CreateCharacter}" FontWeight="Bold" FontStyle="Italic" />
+            </Button>
+            
+            <Button Width="220"   Height="38" Margin="2" Foreground="White" Command="{Binding OpenCharacterPageCmd}"  Style="{StaticResource AddButtonImageStyle}" >
+                <TextBlock Text="{local:T Key=MyCharacter}" FontWeight="Bold" FontStyle="Italic" />
+            </Button>
+          
+            
+            <TextBlock Grid.Row="0" Margin="0 5 0 0" Text="{local:T Key=Game}" Style="{StaticResource DescTitleStyle}"/>
+            <Button Width="220"   Height="38" Margin="2" Foreground="White" Command="{Binding OpenOptionsCmd}"  Style="{StaticResource AddButtonImageStyle}" >
+                <TextBlock Text="{local:T Key=Dice}" FontWeight="Bold" FontStyle="Italic" />
+            </Button>
+            <Button Width="220"   Height="38" Margin="2" Foreground="White" Command="{Binding OpenOptionsCmd}"  Style="{StaticResource AddButtonImageStyle}" >
+                <TextBlock Text="{local:T Key=Guide}" FontWeight="Bold" FontStyle="Italic" />
+            </Button>
+            <Button Width="220"   Height="38" Margin="2" Foreground="White" Command="{Binding OpenOptionsCmd}"  Style="{StaticResource AddButtonImageStyle}" >
+                <TextBlock Text="{local:T Key=BookOfRules}" FontWeight="Bold" FontStyle="Italic" />
+            </Button>
+
+            <TextBlock Grid.Row="0" Margin="0 5 0 0" Text="{local:T Key=General}" Style="{StaticResource DescTitleStyle}"/>
+            <Button Width="220"   Height="38" Margin="2" Foreground="White" Command="{Binding OpenOptionsCmd}"  Style="{StaticResource AddButtonImageStyle}" >
+                <TextBlock Text="{local:T Key=Settings}" FontWeight="Bold" FontStyle="Italic" />
+            </Button> 
+        </StackPanel>
+     
+
+        <ScrollViewer Grid.Column="1" Grid.Row="1">
+            <Frame  Content="{Binding SelectedPage}" Margin="5" NavigationUIVisibility="Hidden">
+
+            </Frame>
+        </ScrollViewer>
+    </Grid>
+</Window>
